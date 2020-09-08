@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .form {
+            min-height: 100vh;
+            color: #ffffff;
+            background: #000000;
+        }
+        
+        .form form,
+        .form-attrs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .form form h2 {
+            text-align: center;
+        }
+        
+        .fio,
+        .address,
+        .passport {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .form form>* {
+            margin: 1rem;
+        }
+        
+        .form-attrs>*,
+        .passport>*,
+        .address>* {
+            margin: .5rem;
+        }
+        
+        .fio>* {
+            margin: .25rem;
+        }
+        
+        .form input,
+        .form select {
+            padding: 5px;
+            color: #12ff03;
+            background: #c7c7c700;
+            border: 2px solid #005000;
+            border-radius: 5px;
+        }
+        
+        .form input[type="submit"] {
+            margin: auto;
+            transition: .5s;
+        }
+        
+        .form input[type="submit"]:hover {
+            color: black;
+            background: white;
+            transition: .5s;
+        }
+        
+        .rqStyle {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- cant use type="module", bcs not use server -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
